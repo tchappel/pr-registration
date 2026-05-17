@@ -89,7 +89,7 @@ const FormSelect = React.forwardRef<
           aria-required={required || undefined}
           aria-describedby={describedBy}
           className={cn(
-            "h-auto w-full rounded-xl px-3 py-2 text-sm font-normal",
+            "h-auto w-full rounded-[12px] px-3 py-2 text-sm font-normal",
             "bg-form-input-bg text-foreground",
             "border border-form-input-border transition-colors",
             "hover:border-form-input-border-focus",

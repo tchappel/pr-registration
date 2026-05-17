@@ -72,7 +72,7 @@ const FormInput = React.forwardRef<HTMLInputElement, FormInputProps>(
           aria-required={required || undefined}
           aria-describedby={describedBy}
           className={cn(
-            "h-auto rounded-xl px-3 py-2 text-sm font-normal",
+            "h-auto rounded-[12px] px-3 py-2 text-sm font-normal",
             "bg-form-input-bg text-foreground placeholder:text-muted-foreground",
             "border border-form-input-border transition-colors",
             "hover:border-form-input-border-focus",
