@@ -6,18 +6,13 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Home page tokens (Phase 1) */
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  /* PR Design System brand primitives */
+  --brand-blue-dark: #031421;
+  --brand-blue: #004987;
+  --brand-blue-accent: #0081bc;
+  --brand-amber-light: #fffbf2;
+  --brand-amber: #ffb600;
+  --brand-amber-dark: #c27803;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -37,23 +32,25 @@
     font-size: 16px;
   }
 
-  /* shadcn tokens (default neutral base color) */
+  /* shadcn tokens (PR Design System mapping) */
   --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --foreground: #1E2B36;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --primary: #004987;
+  --primary-foreground: #ffffff;
+  --secondary: #f9fafb;
+  --secondary-foreground: #1E2B36;
+  --muted: #f9fafb;
+  --muted-foreground: #4a5565;
+  --accent: #0081bc;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.577 0.245 27.325);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: #e5e7eb;
+  --input: #e5e7eb;
+  --ring: #004987;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
@@ -68,26 +65,6 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
 }
 
 #root {
@@ -191,27 +168,33 @@ code {
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --color-brand-blue-dark: var(--brand-blue-dark);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-accent: var(--brand-blue-accent);
+  --color-brand-amber-light: var(--brand-amber-light);
+  --color-brand-amber: var(--brand-amber);
+  --color-brand-amber-dark: var(--brand-amber-dark);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
+  --background: #101828;
+  --foreground: #f9fafb;
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --primary: #0081bc;
+  --primary-foreground: #031421;
+  --secondary: #1e2939;
+  --secondary-foreground: #f9fafb;
+  --muted: #1e2939;
+  --muted-foreground: #99a1af;
+  --accent: #1e2939;
+  --accent-foreground: #f9fafb;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --border: #1e2939;
+  --input: #333e4f;
+  --ring: #0081bc;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
