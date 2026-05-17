@@ -335,6 +335,12 @@
   --sidebar-ring: var(--color-brand-800);
 
   --bg-registration: var(--color-brand-950);
+
+  /* Form field tokens (Figma PR-SE — light mode) */
+  --form-input-bg: var(--color-gray-050);
+  --form-input-border: var(--color-gray-200);
+  --form-input-border-focus: var(--color-brand-700);
+  --form-input-error: var(--color-red-700);
 }
 
 body {
