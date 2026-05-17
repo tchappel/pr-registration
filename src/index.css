@@ -713,6 +713,11 @@ code {
   --color-brand-amber-dark: var(--brand-amber-dark);
 
   --color-bg-registration: var(--bg-registration);
+
+  --color-form-input-bg: var(--form-input-bg);
+  --color-form-input-border: var(--form-input-border);
+  --color-form-input-border-focus: var(--form-input-border-focus);
+  --color-form-input-error: var(--form-input-error);
 }
 
 .dark {
@@ -749,6 +754,12 @@ code {
   --sidebar-ring: var(--color-brand-500);
 
   --bg-registration: var(--color-gray-950);
+
+  /* Form field tokens (Figma PR-SE — dark mode) */
+  --form-input-bg: var(--color-gray-800);
+  --form-input-border: var(--color-gray-800);
+  --form-input-border-focus: var(--color-brand-500);
+  --form-input-error: var(--color-red-500);
 }
 
 @layer base {
